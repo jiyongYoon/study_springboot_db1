@@ -21,7 +21,7 @@ public class MemberServiceV4 {
     private final MemberRepository memberRepository;
 
     @Transactional
-    public void accountTransfer(String fromId, String toId, int money) throws SQLException {
+    public void accountTransfer(String fromId, String toId, int money) {
         bizLogic(fromId, toId, money);
     }
 
